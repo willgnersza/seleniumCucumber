@@ -10,6 +10,9 @@ import util.CommonResources;
 @CucumberOptions(
         features = "classpath:features",
         tags = "@run",
+        plugin = {
+                "html:cucumber-report" // Gera o relatório em HTML
+        },
         glue = {""}
 )
 public class RunTest {
