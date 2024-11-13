@@ -1,0 +1,17 @@
+stages:
+  - test
+
+# CI/CD Selenium com Cucumber
+selenium_cucumber_tests:
+  stage: test
+  image: maven:3.8.4-jdk-11  # Usando a imagem Maven com JDK 11
+  services:
+    - name: selenium/standalone-chrome:latest  # Selenium WebDriver com Chrome
+  script:
+    - mvn clean test  # Executar os testes usando Maven
+  only:
+    - main  # Configura para rodar o pipeline apenas na branch main
+  artifacts:
+      paths:
+        - target/selenium_cucumber # Caminho para os relatórios ou artefatos gerados
+      expire_in: 1 week
