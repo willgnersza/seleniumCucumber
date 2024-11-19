@@ -13,4 +13,7 @@ public class EcommerceCartPageElementMap extends CommonPages {
 
     @FindBy(id = "checkout")
     protected WebElement bntCheckout;
+
+    @FindBy(id = "remove-sauce-labs-backpack")
+    protected WebElement btnRemoveCart;
 }

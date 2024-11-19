@@ -12,10 +12,23 @@ public class EcommerceCheckoutPage extends EcommerceCheckoutPageElementMap {
         labelCheckoutInformation.isDisplayed();
     }
 
-    public void addCheckoutInformation (){
-        fieldFirstName.sendKeys("123");
+    public void preencheFieldFirstName (){
+        fieldFirstName.sendKeys("456");
+    }
+
+    public void preencheFieldLastName (){
         fieldLastName.sendKeys("456");
+    }
+
+    public void preencheFieldPostalCode (){
         fieldPostalCode.sendKeys("789");
+    }
+    public void clickBtnContinue (){
         btnContinue.click();
     }
+
+    public String validationMessage (){
+        return erroMessage.getText();
+    }
+
 }

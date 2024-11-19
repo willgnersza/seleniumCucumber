@@ -20,5 +20,6 @@ public class EcommerceCheckoutPageElementMap extends CommonPages {
     @FindBy(xpath = "/html/body/div/div/div/div[1]/div[2]/span")
     protected WebElement labelCheckoutInformation;
 
-
+    @FindBy(xpath = "/html/body/div/div/div/div[2]/div/form/div[1]/div[4]/h3")
+    protected WebElement erroMessage;
 }

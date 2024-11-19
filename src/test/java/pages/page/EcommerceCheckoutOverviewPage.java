@@ -23,6 +23,7 @@ public class EcommerceCheckoutOverviewPage extends EcommerceCheckoutOverviewPage
     }
 
     public void clickFinish () {
+
         btnFinish.click();
     }
 }

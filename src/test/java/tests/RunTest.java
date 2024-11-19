@@ -8,7 +8,7 @@ import util.CommonResources;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "classpath:features",
+        features = "src/test/resources/features/teste.feature",
         tags = "@run",
         plugin = {
                 "html:cucumber-report" // Gera o relatório em HTML
