@@ -9,3 +9,7 @@ Foi realizada a implementação dos testes onde valida o login e a navegação e
 ## Análise de Resultados
 
 A análise dos resultados do teste está no arquivo cucumber-report/index.html.
+
+## CI/CD
+
+O arquivo .gitlab-ci.yml contem um exemplo de como implementar uma integração continua para que a cada commit os testes sejam executados.
