@@ -13,5 +13,5 @@ selenium_cucumber_tests:
     - main  # Configura para rodar o pipeline apenas na branch main
   artifacts:
       paths:
-        - target/selenium_cucumber # Caminho para os relatórios ou artefatos gerados
+        - cucumber-report # Caminho para os relatórios ou artefatos gerados por exemplo o arquivo index.html
       expire_in: 1 week
